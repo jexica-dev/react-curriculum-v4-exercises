@@ -2,10 +2,8 @@
 //Exercise: Build an "About Me" Component in this file
 
 export default function StudentWork() {
-  //add variables here
-  //    - A variable for your name
-  //  - A variable for your age
-  //  - A list of your hobbies using an array
+  // LESSON 01 COMPLETE
+  // APOLOGIES, I FORGOT TO CHECKOUT A NEW BRANCH BEFORE PUSHING TO MAIN
 
   const name = 'Jessica Ayran';
   const age = 33;
@@ -18,6 +16,7 @@ export default function StudentWork() {
     'cooking',
     'baking',
   ];
+
   return (
     <div>
       {/* add JSX here */}

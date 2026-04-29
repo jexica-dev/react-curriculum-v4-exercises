@@ -10,11 +10,10 @@
 
 import { useState } from 'react';
 export default function BugMutatedState() {
-  let [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   function handleAdd() {
-    count++;
-    setCount(count);
+    setCount(count + 1);
   }
 
   return (
@@ -26,4 +25,6 @@ export default function BugMutatedState() {
 }
 
 // Explanation:
-// (Write your explanation here)
+// The setters and getters must be in a const in order to avoid errors.
+// The count++ was a local variable and stays the same; a fixed state. "data"
+// The setter is using React's library to request a re-render with new data. "control"
